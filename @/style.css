@@ -1,0 +1,204 @@
+* {
+  font-family: "Google Sans", sans serif;
+}
+html {
+  --border-color: #9e9e9e;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  --blue: #1a73e8;
+}
+header {
+  right: 0;
+  top: 0;
+  /* width: 95%; */
+  position: fixed;
+  margin: auto;
+  text-align: center;
+  left: 0;
+}
+.opt {
+  color: #fff;
+  cursor: pointer;
+  flex: 1;
+  padding: 4px;
+  border-radius: 8px;
+  margin: 2px;
+  border: 2px solid #dadada;
+  background: var(--blue);
+  user-select: none;
+}
+
+.hoverable,
+.hoverable:visited {
+  transition: 0.2s ease-in-out;
+}
+.hoverable:active,
+.hoverable:focus .hoverable:visited:hover,
+.hoverable:hover,
+.hoverable:visited:active,
+.hoverable:visited:focus {
+  transform: scale(1.02);
+}
+.infoContainer {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+.infoBox {
+  border-top: 2px solid var(--border-color);
+  animation: animate 0.3s;
+  position: fixed;
+  height: 30%;
+  background: #fff;
+  width: 40%;
+  box-shadow: 2px 3px 2px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 2px solid var(--border-color);
+  margin: auto;
+  text-align: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* padding: 8px; */
+}
+@keyframes animate {
+  from {
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+  }
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.close {
+  margin-left: auto;
+  display: block;
+  margin-right: 4px;
+  text-align: right;
+}
+.close_img {
+  width: 30px;
+  margin-top: 4px;
+  cursor: pointer;
+}
+.fullPage {
+  height: 95%;
+  width: 95%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-top: 20%;
+  text-align: center;
+}
+.Start {
+  cursor: pointer;
+  background: var(--blue);
+  color: white;
+  width: 45%;
+  padding: 8px;
+  border: 2px solid;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.question {
+  transition: 0.3s ease-in-out;
+  border-radius: 4px;
+  display: block;
+  margin: 20px;
+  padding: 8px;
+  border: 2px solid var(--border-color);
+}
+.question:focus,
+.question:hover {
+  box-shadow: 2px 2px 2px var(--border-color);
+}
+.infbtn {
+  flex-direction: row-reverse;
+}
+.bold {
+  font-weight: bold;
+}
+.cli {
+  cursor: pointer;
+  border: 2px solid var(--border-color);
+  border-radius: 2px;
+  margin: 5px;
+  padding: 4px;
+  min-width: 20px;
+  user-select: none;
+}
+.solved {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDBWMHoiPjwvcGF0aD48cGF0aCBvcGFjaXR5PSIzIiBkPSJNNSAxOWgxNFY1SDV2MTR6bTIuNDEtNy40bDIuNTggMi41OCA2LjU5LTYuNTlMMTcuOTkgOWwtOCA4TDYgMTMuMDFsMS40MS0xLjQxeiIgc3R5bGU9IiBmaWxsOiAjMDBjODUzOyI+PC9wYXRoPjxwYXRoIGQ9Ik0xOSAzSDVjLTEuMSAwLTIgLjktMiAydjE0YzAgMS4xLjkgMiAyIDJoMTRjMS4xIDAgMi0uOSAyLTJWNWMwLTEuMS0uOS0yLTItMnptMCAxNkg1VjVoMTR2MTR6TTE3Ljk5IDlsLTEuNDEtMS40Mi02LjU5IDYuNTktMi41OC0yLjU3LTEuNDIgMS40MSA0IDMuOTl6Ij48L3BhdGg+PC9zdmc+);
+}
+.unsolved {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDBWMHoiLz48cGF0aCBkPSJNMTkgNXYxNEg1VjVoMTRtMC0ySDVjLTEuMSAwLTIgLjktMiAydjE0YzAgMS4xLjkgMiAyIDJoMTRjMS4xIDAgMi0uOSAyLTJWNWMwLTEuMS0uOS0yLTItMnoiLz48L3N2Zz4);
+}
+.q-state {
+  transition: 0.3s ease-in-out;
+  margin-left: 11px;
+  text-transform: uppercase;
+  height: 24px;
+  width: 24px;
+}
+.contain-app {
+  margin-top: 50px;
+}
+
+[flex] {
+  display: flex;
+}
+
+.in {
+  color: red;
+  /* font-weight: bold; */
+  font-size: 30px;
+  flex: 1;
+}
+
+.out {
+  color: green;
+  /* font-weight: bold; */
+  font-size: 30px;
+  flex: 1;
+}
+
+.arr {
+  height: 50px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.row-data {
+  flex: 1;
+}
+
+.hints {
+  display: flex;
+}
+
+.or-btn {
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.rf {
+  font-size: 40px;
+  margin-top: 10%;
+}
+
+.info_ {
+  text-align: left;
+  font-size: 20px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.info_ > div {
+  display: list-item;
+  margin-left: 5px;
+}
